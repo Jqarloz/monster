@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Valkyrie Maiden" nameDescription="a valkyrie" race="blood" experience="12005" speed="390" manacost="450">
+	<health now="19000" max="19000"/>
+	<look type="139" head="114" body="57" legs="95" feet="113" addons="3" corpse="20526"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="5000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-0" max="-850"/>
+		<attack name="physical" interval="2000" chance="15" range="7" min="-0" max="-1450">
+			<attribute key="shootEffect" value="spear"/>
+		</attack>
+	</attacks>
+	<defenses armor="200" defense="200"/>
+	<elements>
+		<element icePercent="10"/>
+		<element firePercent="10"/>
+		<element holyPercent="5"/>
+		<element deathPercent="-5"/>
+		<element physicalPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="35" chance="30000"/><!-- gold coin -->
+		<item id="2666" chance="30100"/><!-- meat -->
+		<item id="2674" countmax="2" chance="6800"/><!-- apple -->
+		<item id="2229" chance="760"/><!-- skull -->
+		<item id="2463" chance="10000"/><!-- pplate armor -->
+		<item id="7367" chance="55000"/><!-- enchanted spear -->
+		<item id="3965" countmax="3" chance="5155"/><!-- hunting spear -->
+		<item id="2476" chance="719"/><!-- knight armor -->
+		<item id="2430" chance="492"/><!-- knight axe -->
+		<item id="2200" chance="1086"/><!-- protection amulet -->
+		<item id="8473" countmax="3" chance="591"/><!-- ultimate health potion -->
+		<item id="2145" countmax="3" chance="200"/><!-- small diamond -->
+		<item id="12399" chance="5800"/><!-- Girlish Hair Decoration -->
+		<item id="12400" chance="3400"/><!-- Protective Charm -->
+	</loot>
+</monster>

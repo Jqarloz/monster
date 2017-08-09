@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Voice of Ruin" nameDescription="a the voice of ruin" race="blood" experience="3500000" speed="460" manacost="0">
+	<health now="3050000" max="3050000"/>
+	<look type="344" corpse="11288"/>
+	<targetchange interval="4000" chance="40"/>
+	<flags>
+		<flag rewardboss="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="50"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="280" attack="300"/>
+		<attack name="poisoncondition" interval="2000" chance="15" length="3" spread="2" min="-1440" max="-2820">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="15" target="0" radius="3" min="-1290" max="-2540">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="10" length="8" spread="0" min="-190" max="-2480">
+			<attribute key="areaEffect" value="greenbubble"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="healing" interval="2000" chance="10" min="475" max="625">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="10"/>
+		<element energyPercent="20"/>
+		<element icePercent="10"/>
+	</elements>
+	<summons maxSummons="8">
+		<summon name="Ghastly Dragon" interval="1000" chance="10" max="4" />
+		<summon name="lizard chosen" interval="1000" chance="10" max="4" />
+	</summons>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grzzzzzzz!"/>
+		<voice sentence="Garrrblarrrrzzzz!"/>
+		<voice sentence="Kzzzzzz!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="33000" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="32000" /><!-- gold coin -->
+		<item id="2148" countmax="36" chance="32000" /><!-- gold coin -->
+		<item id="11326" chance="5800" /><!-- corrupted flag.-->		
+		<item id="2152" countmax="5" chance="2920" /><!-- platinum coin -->
+		<item id="11327" chance="3800" /><!--  Cursed Shoulder Spikes -->
+		<item id="9971" chance="3800" /><!--  gold ingot -->
+		<item id="11325" chance="3800" /><!--  11325 -->
+		<item id="11303" chance="3800" /><!--  Zaoan Shoes-->
+		<item id="2470" chance="12500" /><!-- golden legs -->
+		<item id="2033" chance="12500" /><!-- golden mug -->
+		<item id="8472" chance="12500" /><!-- great spirit potion -->
+		<item id="2177" chance="12500" /><!-- life crystal -->
+		<item id="2171" chance="12500" /><!-- platinum amulet -->
+		<item id="2377" chance="12500" /><!-- two handed sword -->
+		<item id="2434" chance="6666" /><!-- dragon hammer -->
+		<item id="9971" chance="6666" /><!-- gold ingot -->
+		<item id="2418" chance="6666" /><!-- golden sickle -->
+		<item id="2155" chance="6666" /><!-- green gem -->
+		<item id="2162" chance="6666" /><!-- magic lightwand -->
+		<item id="2472" chance="6666" /><!-- magic plate armor -->
+		<item id="2514" chance="6666" /><!-- mastermind shield -->
+		<item id="2150" countmax="20" chance="13500" />
+		<item id="2145" countmax="5" chance="9500" />
+		<item id="2149" countmax="10" chance="15500" />
+		<item id="2146" countmax="10" chance="13500" />
+		<item id="2182" chance="3500" />
+		<item id="2165" chance="9500" />
+		<item id="2197" chance="4000" />
+		<item id="2174" chance="2500" />
+		<item id="2151" countmax="7" chance="14000" />
+		<item id="2112" chance="14500" />
+		<item id="2421" chance="13500" />
+		<item id="2377" chance="20000" />
+	</loot>
+</monster>

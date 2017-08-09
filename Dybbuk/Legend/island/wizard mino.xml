@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fight Mino" nameDescription="a Fight mino" race="blood" experience="19000" speed="470" manacost="0">
+	<health now="9000" max="9000"/>
+	<look type="25" corpse="5969"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-420"/>
+		<attack name="energy" interval="3000" chance="17" range="7" min="-215" max="-345">
+			<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="energy" interval="3500" chance="10" range="7" radius="1" target="1" min="-235" max="-495">
+			<attribute key="shootEffect" value="energyball"/>
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element energyPercent="20"/>
+		<element earthPercent="15"/>
+		<element holyPercent="10"/>
+		<element icePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Learrn tha secrret uf deathhh!"/>
+		<voice sentence="Kaplar!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="40" chance="37000"/><!-- gold coin -->
+		<item id="2684" countmax="15" chance="7150"/><!-- carrot -->
+		<item id="2361" chance="10"/><!-- Frozen Starlight -->
+		<item id="5878" chance="99500"/><!-- Minotaur leather -->
+		<item id="11244" chance="100"/><!-- Minotaur backpack -->
+		<item id="2498" chance="1000"/><!-- royal helmet -->
+		<item id="2489" chance="9500"/><!-- dark armor -->
+		<item id="2409" chance="9000"/><!-- serpent sword -->
+		<item id="2677" chance="2500"/><!-- knight legs -->
+		<item id="7425" chance="9000"/><!-- taurus mace -->
+		<item id="18390" chance="850"/><!-- wand of defiance -->
+		<item id="13498" chance="370"/><!-- scorpion screpte -->
+	</loot>
+</monster>

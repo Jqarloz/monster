@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cality Mage" nameDescription="a shaman" race="blood" experience="9500" speed="380" manacost="0">
+	<health now="19000" max="19000"/>
+	<look type="634" head="114" body="77" legs="77" feet="114" addons="3" mount="262" corpse="3058"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="4"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-100" max="-300"/>
+		<attack name="energy" interval="1000" chance="13" range="7" min="-100" max="-450">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="8" range="7" radius="1" target="1" min="-100" max="-305">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="8" defense="10">
+		<defense name="healing" interval="1000" chance="25" min="270" max="1430">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="50"/>
+		<element holyPercent="25"/>
+		<element earthPercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Huumans stinkk!"/>
+	</voices>
+	<summons maxSummons="2">
+		<summon name="Mutated Rat" interval="1000" chance="25" max="2"/>
+		<summon name="Hellspawn" interval="1000" chance="25" max="2"/>
+		<summon name="Mutated Bat" interval="1000" chance="25" max="2"/>
+		<summon name="Wyvern" interval="1000" chance="25" max="2"/>
+	</summons>
+	<loot>
+		<item id="2152" countmax="25" chance="61000"/><!-- gold coin -->
+		<item id="2686" countmax="10" chance="10000"/><!-- corncob -->
+		<item id="2323" chance="800"/><!-- hat of the mad -->
+		<item id="8871" chance="800"/><!-- focus armor -->
+		<item id="2389" chance="6350"/><!-- spear -->
+		<item id="8901"  chance="1100"/><!-- spellbook of warding -->
+		<item id="8920" chance="1500"/><!-- wand of starstorm -->
+		<item id="5909" chance="10000"/><!-- whrite poc -->
+	</loot>
+</monster>

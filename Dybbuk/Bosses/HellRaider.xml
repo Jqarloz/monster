@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hell Raider" nameDescription="a Hell Raider" race="fire" experience="2000000" speed="880" manacost="0">
+	<health now="420000" max="420000"/>
+	<look type="842" head="114" body="107" legs="114" feet="114" corpse="25152"/>
+	<targetchange interval="5000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-900"/>
+		<attack name="death" interval="1000" chance="8" radius="9" target="0" min="-800" max="-1900">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-850" duration="60000">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="strength" interval="800" chance="10" radius="5" target="0" min="-600" max="-1450">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="fire" interval="3000" chance="13" range="7" radius="7" target="1" min="-300" max="-800">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="manadrain" interval="3000" chance="8" radius="10" target="0" min="-600" max="-700">
+			<attribute key="areaEffect" value="energyarea"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="9" length="8" spread="0" min="-400" max="-800">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="poisoncondition" interval="5000" chance="18" length="0" spread="0" min="-800" max="-1000">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="6" radius="14" target="0" min="-600" max="-1200">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="188" defense="145">
+		<defense name="healing" interval="1000" chance="15" min="1000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="8" speedchange="1480" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="60" chance="60000"/><!-- gold coin -->
+		<item id="2148" countmax="120" chance="60000"/><!-- gold coin -->
+		<item id="2160" countmax="3" chance="100000"/><!-- platinum coin -->
+		<item id="2495" chance="300"/><!-- demon legs -->
+		<item id="18405" chance="300"/><!-- prismatic legs -->
+		<item id="15412" chance="500"/><!-- ornate legs -->
+		<item id="2147" countmax="25" chance="100000"/><!-- small ruby -->
+		<item id="7367" countmax="55" chance="52630"/><!-- enchanted spear -->
+		<item id="20139" chance="37030"/><!-- spiky club -->
+		<item id="2159" countmax="25" chance="30571"/><!-- scarab coins -->
+		<item id="7438" chance="49800"/><!-- elvish bow -->
+		<item id="7730" chance="74280"/><!-- blue legs -->
+		<item id="2470" chance="74280"/><!-- golden legs -->
+		<item id="2520" chance="66490"/><!-- demon shield -->
+		<item id="2489" chance="74130"/><!-- dark armor -->
+		<item id="2514" chance="83890"/><!-- mastermind shield -->
+		<item id="11304" chance="56700"/><!-- zoan legs -->
+	</loot>
+</monster>

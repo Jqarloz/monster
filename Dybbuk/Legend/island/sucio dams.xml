@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Sucio Dams" nameDescription="a sucio dams" race="blood" experience="85000" speed="320" manacost="300">
+	<health now="90000" max="90000"/>
+	<look type="153" body="38" feet="97" head="59" legs="38" addons="3" corpse="3058"/>
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="0"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="80"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-815" max="-1500"/>
+	</attacks>
+	<elements>
+		<element physicalPercent="5"/>
+		<element energyPercent="20"/>
+		<element holyPercent="10"/>
+		<element earth="-10"/>
+		<element death="-15"/>
+	</elements>
+	<voices interval="4000" chance="16">
+		<voice sentence="Hehehe!"/>
+		<voice sentence="Raahhh!"/>
+		<voice sentence="You are one of THEM! Die!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="3" chance="50000"/><!-- gold coin -->
+		<item id="8865" chance="1000"/><!-- dark cape -->
+		<item id="2690" countmax="23" chance="22500"/><!-- roll -->
+		<item id="2666" countmax="6" chance="12000"/><!-- meat -->
+		<item id="8930" chance="1500"/><!-- emerald sword -->
+		<item id="8928" chance="1500"/><!-- obsidian truncheon  -->
+		<item id="8924" chance="1500"/><!-- hellforget axe -->
+		<item id="8918" chance="1500"/><!-- spellbook of dark mysteries -->
+		<item id="8851" chance="1500"/><!-- royal crossbow -->
+		<item id="2744" chance="4800"/><!-- red rose -->
+		<item id="1681" chance="5500"/><!-- blue pillow -->
+	</loot>
+</monster>

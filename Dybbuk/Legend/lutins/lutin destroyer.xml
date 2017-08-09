@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lutin Destroyer" nameDescription="a lutin destroyer" race="blood" experience="13000" speed="320" manacost="310">
+	<health now="6000" max="6000"/>
+	<look type="297" corpse="6002"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-210"/>
+		<attack name="physical" interval="2000" chance="9" range="7" min="-250" max="-375">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+		<attack name="lifedrain" interval="4000" chance="5" range="7" min="-100" max="-300">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Shiny, Shiny!"/>
+		<voice sentence="You mean!"/>
+		<voice sentence="All mine!"/>
+		<voice sentence="Uhh!"/>
+	</voices>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="9" chance="31500"/><!-- gold coin -->
+		<item id="2152" countmax="19" chance="31500"/><!-- gold coin -->
+		<item id="1294" countmax="32" chance="9000"/><!-- small stone -->
+		<item id="5902" countmax="2" chance="9000"/><!-- honey combs -->
+		<item id="7404" chance="5500"/><!-- dagger -->
+		<item id="8887" chance="100"/><!-- frozen plate -->
+		<item id="2415" chance="4050"/><!-- great axe -->
+		<item id="2667" countmax="8" chance="12500"/><!-- fish -->
+		<item id="2491" chance="5000"/><!-- leather helmet -->
+		<item id="2235" chance="6000"/><!-- moldy cheese -->
+		<item id="18405" chance="10"/><!-- prismatic legs -->
+		<item id="2519" chance="4000"/><!-- crown shield -->
+	</loot>
+</monster>

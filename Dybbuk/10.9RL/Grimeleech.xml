@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Grimeleech" nameDescription="a Grimeleech" race="undead" experience="7500" speed="220" manacost="0">
+	<health now="9500" max="9500"/>
+	<look type="855" corpse="25918"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-450"/>
+		<attack name="death" interval="2000" chance="10" length="7" spread="0" min="-550" max="-950">
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="10" length="7" spread="0" min="-350" max="-400">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="melee" interval="2000" chance="10" range="6" min="-200" max="-245">
+			<attribute key="shootEffect" value="greenstar"/> ​
+		</attack>
+	</attacks>
+	<defenses armor="65" defense="65">
+		<defense name="healing" interval="2000" chance="15" min="280" max="400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="80"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Death... Taste!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="144" chance="100000"/>	<!-- gold coin -->
+		<item id="2152" countmax="7" chance="19720"/>		<!-- platinum coin -->
+		<item id="7590" countmax="3" chance="5960"/>		<!-- great mana potion -->
+		<item id="7591" countmax="3" chance="5960"/>		<!-- great health potion -->
+		<item id="8472" countmax="3" chance="5960"/>		<!-- great spirit potion-->
+		<item id="6558" countmax="3" chance="3960"/>		<!-- Concentrated Demonic Blood -->
+		<item id="25868" chance="960"/>						<!-- grimeleech wings -->
+		<item id="6500" chance="1060"/>						<!-- Demonic Essence -->
+		<item id="2795" countmax="5" chance="1960"/>		<!-- Fire Mushroom  -->
+		<item id="2796" countmax="5" chance="2960"/>		<!-- green mushroom -->
+		<item id="2145" countmax="5" chance="2460"/>		<!-- Small Diamond  -->
+		<item id="9970" countmax="5" chance="2760"/>		<!-- Small Topaz -->
+		<item id="2150" countmax="5" chance="2660"/>		<!-- Small Amethyst -->
+		<item id="8910" chance="3960"/>						<!-- underworld rod -->
+		<item id="8922" chance="3960"/>						<!-- Wand of Voodoo -->
+		<item id="2156" chance="4960"/>						<!-- Red Gem  -->
+		<item id="2154" chance="4560"/>						<!-- yellow gem -->
+		<item id="2520" chance="1960"/>						<!-- Demon Shield  -->
+		<item id="2158" chance="4960"/>						<!--  blue gem -->
+		<item id="25864" chance="760"/>						<!-- Rift Shield -->
+		<item id="26004" chance="460"/>						<!-- Rift Bow -->
+		<item id="7388" chance="1960"/>						<!-- Vile Axe -->
+	</loot>
+</monster>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Indominus Rex" nameDescription="a rex" race="undead" experience="1460000" speed="320" manacost="0">
+	<health now="178000" max="178000"/>
+	<look type="231" corpse="6306"/>
+	<targetchange interval="4000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="366"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="200" attack="200"/>
+	</attacks>
+	<defenses armor="335" defense="335"/>
+	<elements>
+		<element firePercent="10"/>
+		<element icePercent="50"/>
+		<element physicalPercent="-10"/>
+		<element holyPercent="-15"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="T-rex" interval="6000" chance="30" max="1"/>
+	</summons>
+</monster>

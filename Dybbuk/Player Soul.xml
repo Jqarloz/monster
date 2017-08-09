@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Player Soul" nameDescription="a evil soul" race="blood" experience="20000" speed="500" manacost="290">
+	<health now="40000" max="40000"/>
+	<look type="12" head="114" body="94" legs="119" feet="89" corpse="6068"/>
+	<targetchange interval="5000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="70" attack="70"/>
+		<attack name="fire" interval="2000" chance="10" range="7" min="-100" max="-400">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="15" range="7" speedchange="-600" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-100" max="-300">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="200" chance="20" min="4000" max="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="20" duration="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-12"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Me have him!"/>
+		<voice sentence="Zig Zag! Gobo attack!"/>
+		<voice sentence="Help! Goblinkiller!"/>
+		<voice sentence="Bugga! Bugga!"/>
+		<voice sentence="Me green, me mean!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="25" chance="50320"/><!-- gold coin -->
+		<item id="2688" countmax="5" chance="50320"/><!-- candy -->
+		<item id="6569" countmax="15" chance="50320"/><!-- candy -->
+		<item id="2493" chance="200"/><!-- demon -->
+		<item id="2494" chance="200"/><!-- demon -->
+		<item id="2495" chance="200"/><!-- demon -->
+		<item id="9776" chance="200"/><!-- yalahar -->
+		<item id="9778" chance="200"/><!-- yalahar -->
+		<item id="9779" chance="200"/><!-- yalahar -->
+		<item id="15407" chance="200"/><!-- depth -->
+		<item id="15408" chance="200"/><!-- depth -->
+		<item id="15409" chance="200"/><!-- depth -->
+		<item id="15410" chance="200"/><!-- depth -->
+	</loot>
+</monster>

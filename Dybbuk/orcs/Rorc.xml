@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Bost Rabbit" nameDescription="a rabbit" race="blood" experience="105000" speed="0" manacost="540">
+	<health now="200000" max="200000"/>
+	<look typeex="18154" corpse="3058"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="0"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-1000"/>
+		<attack name="fire" interval="1000" chance="14" range="7" radius="7" target="1" min="-260" max="-1000">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="energy" interval="1000" chance="30" length="8" spread="0" min="-220" max="-1060">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="11" defense="11">
+	
+		<defense name="healing" interval="2000" chance="25" min="1000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	
+		<defense name="speed" interval="2000" chance="6" speedchange="1300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>	
+		
+	</defenses>
+	<elements>
+		<element holyPercent="1"/>
+		<element energyPercent="1"/>
+		<element deathPercent="-1"/>
+		<element earthPercent="-1"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="20">
+		<summon name="Normal Rabbit" interval="100" chance="50" max="2"/>
+		<summon name="Ranger Rabbit" interval="100" chance="50" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Kroaaah!!"/>
+		<voice sentence="Butak crooooarck bana zamar!"/>
+		<voice sentence="Krrrooow truaaak kiiiii!"/>
+	</voices>
+</monster>

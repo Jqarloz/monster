@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ogre Shaman" nameDescription="a ogre shaman" race="blood" experience="625" speed="210" manacost="695">
+	<health now="800" max="800"/>
+	<look type="859" corpse="25346"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="5"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-350"/>
+		<attack name="earth" interval="2000" chance="10" range="7" min="-100" max="-370">
+		</attack>
+		<attack name="poisonfield" interval="5000" chance="17" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="35" defense="45"/>
+	<elements>
+		<element energyPercent="20"/>
+		<element firePercent="10"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Stay here, soul food!"/>
+		<voice sentence="You more delicate than clomp!"/>
+		<voice sentence="The spirits hunger!"/>
+		<voice sentence="A sacrifice for Great Hunger!"/>
+	</voices>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="82000"/><!-- gold coin -->
+		<item id="7588" chance="3630"/><!-- strong health potion -->
+		<item id="25389" chance="4930"/><!-- ogre ear stud -->
+		<item id="25390" chance="3930"/><!-- ogre nose ring -->
+		<item id="25385" chance="4930"/><!-- shamanic talisman -->
+		<item id="25392" chance="2530"/><!-- skull fetish -->
+		<item id="2229" chance="2530"/><!-- skull -->
+		<item id="25386" countmax="2" chance="4200"/><!-- prickly pear -->
+		<item id="12408" chance="5530"/><!-- broken shamanic staff -->
+		<item id="20111" chance="2530"/><!-- bone fetish -->
+		<item id="2147" countmax="3" chance="2460"/><!-- Small rubies  -->
+		<item id="2185" chance="2530"/><!-- necrotic rod -->
+		<item id="2144" chance="2230"/><!-- black pearl -->
+		<item id="2031" chance="1230"/><!-- waterskin -->
+		<item id="25395" countmax="2" chance="1960"/><!-- opal  -->
+		<item id="2188" chance="1530"/><!-- wand of decay -->
+		<item id="25394" countmax="2" chance="2060"/><!-- onyx chip -->
+		<item id="25393" chance="760"/><!-- shamanic mask -->
+		<item id="3952" chance="1530"/><!-- didgeridoo -->
+		<item id="25384" chance="130"/><!-- ogre scepta -->
+	</loot>
+</monster>

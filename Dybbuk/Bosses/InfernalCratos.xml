@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Infernal Cratos" nameDescription="a Infernal Cratos" race="fire" experience="2000000" speed="980" manacost="0">
+	<health now="420000" max="420000"/>
+	<look type="842" head="114" body="94" legs="94" feet="114" corpse="25152"/>
+	<targetchange interval="2000" chance="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-500"/>
+		<attack name="manadrain" interval="2000" chance="10" range="7" min="-300" max="-800"/>
+		<attack name="fire" interval="500" chance="50" range="7" radius="7" target="1" min="-750" max="-1950">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="firefield" interval="2000" chance="10" range="7" radius="3" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="0" min="-500" max="-790">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+		<attack name="energy strike" interval="2000" chance="10" range="1" min="-810" max="-900">
+		</attack>
+		<attack name="speed" interval="2000" chance="15" radius="1" target="1" speedchange="-1500" duration="30000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="155" defense="155">
+		<defense name="healing" interval="2000" chance="15" min="1800" max="2500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="3200" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="60" chance="60000"/><!-- gold coin -->
+		<item id="2148" countmax="120" chance="60000"/><!-- gold coin -->
+		<item id="2160" countmax="3" chance="100000"/><!-- platinum coin -->
+		<item id="2494" chance="300"/><!-- demon armor -->
+		<item id="18404" chance="300"/><!-- prismatic armor -->
+		<item id="12607" chance="300"/><!-- elite draken mail -->
+		<item id="2149" countmax="25" chance="100000"/><!-- small emerald -->
+		<item id="7368" countmax="55" chance="52630"/><!-- assassin star -->
+		<item id="6553" chance="37030"/><!-- ruthless axe -->
+		<item id="2151" countmax="25" chance="30571"/><!-- talon -->
+		<item id="7382" chance="49800"/><!-- demonrage sword -->
+		<item id="2492" chance="74280"/><!-- dragon scale mail -->
+		<item id="2466" chance="74280"/><!-- golden armor -->
+		<item id="2520" chance="66490"/><!-- demon shield -->
+		<item id="2470" chance="74130"/><!-- golden legs -->
+		<item id="2514" chance="83890"/><!-- mastermind shield -->
+		<item id="2472" chance="56700"/><!-- magic plate armor -->
+	</loot>
+</monster>

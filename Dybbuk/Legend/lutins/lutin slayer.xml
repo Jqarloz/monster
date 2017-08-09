@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lutin Slayer" nameDescription="a lutin slayer" race="blood" experience="14000" speed="320" manacost="360">
+	<health now="7000" max="7000"/>
+	<look type="296" corpse="6002"/>
+	<targetchange interval="10000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-410"/>
+		<attack name="drunk" interval="5000" chance="15" duration="10000">
+			<attribute key="shootEffect" value="poison"/>
+			<attriubte key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="9" range="7" min="-150" max="-675">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+	</attacks>
+	<defenses armor="30">
+		<defense name="invisible" interval="7500" chance="10" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element earthPercent="-10"/>
+		<element holyPercent="5"/>
+		<element deathPercent="-15"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Goblin Powahhh!"/>
+	</voices>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="100" chance="30000"/><!-- gold coin -->
+		<item id="2436" chance="4000"/><!-- skull staff -->
+		<item id="8850" chance="1800"/><!-- chain bolter -->
+		<item id="5902" countmax="3" chance="9000"/><!-- honey combs -->
+		<item id="8886" chance="100"/><!-- Molten plate -->
+		<item id="2645" chance="3000"/><!-- steel boots -->
+		<item id="2293" countmax="3" chance="8750"/><!-- magic wall -->
+		<item id="1294" countmax="13" chance="9000"/><!-- small stone -->
+		<item id="18410" chance="10"/><!-- prismatic shield -->
+	</loot>
+</monster>

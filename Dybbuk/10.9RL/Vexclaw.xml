@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vexclaw" nameDescription="a vexclaw" experience="2550" speed="260" race="fire" manacost="0">
+	<health now="3500" max="3500"/>
+	<targetchange interval="4000" chance="15"/>
+	<look type="854" corpse="25914"/>	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-50" max="-2050"/>
+		<attack name="fireball" interval="1000" chance="20" min="-150" max="-575"/>
+		<attack name="hellspawn soulfire" interval="2000" range="5" chance="10"/>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="10" min="120" max="230">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="270" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="20"/>
+		<element energyPercent="10"/>
+		<element firePercent="40"/>
+		<element deathPercent="-5"/>
+		<element icePercent="-10"/>
+		<element holyPercent="30"/>
+		<element earthPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Weakness must be culled!"/>
+		<voice sentence="Power is miiiiine!" />
+	</voices>
+	<loot>
+		<item id="2148" countmax="182" chance="60000"/><!-- gold coin -->
+		<item id="2152" countmax="8" chance="60000"/><!-- platium coin -->
+		<item id="8472" countmax="3" chance="5960"/><!-- great spirit potion-->
+		<item id="7590" countmax="3" chance="5960"/><!-- great mana potion -->
+		<item id="25866" chance="5333"/><!-- vexclaw talon -->
+		<item id="6500" chance="5333"/><!-- demonic escence -->
+		<item id="2795" chance="4333"/><!-- fire mushroom	-->
+		<item id="2150" chance="4033"/><!-- small amethysts	-->
+		<item id="2149" countmax="5" chance="3933"/><!-- Small Emerald -->
+		<item id="9970" countmax="5" chance="3733"/><!-- small topaz -->
+		<item id="2396" chance="1733"/><!-- ice rapier -->
+		<item id="2156" chance="2960"/>	<!-- Red Gem  -->
+		<item id="2432" chance="3960"/>	<!-- fire axe -->
+		<item id="2164" chance="3460"/>	<!-- might ring -->
+		<item id="2393" chance="1460"/>	<!-- giant sword -->
+		<item id="2214" chance="3460"/>	<!-- Ring of Healing  -->
+		<item id="2462" chance="2060"/>	<!-- devil helmet -->
+		<item id="2470" chance="1960"/>	<!-- golden legs -->
+		<item id="2520" chance="1460"/>	<!-- demon shield -->
+		<item id="2472" chance="1060"/>	<!-- magic plate armor -->
+		<item id="8473" countmax="3" chance="4960"/><!-- great health potion -->
+		<item id="2151" chance="2060"/>	<!-- talon -->
+		<item id="2147" countmax="5" chance="2460"/><!-- Small rubies  -->
+		<item id="2418" chance="2060"/>	<!-- Golden Sickle -->
+		<item id="2165" chance="2060"/>	<!-- Stealth Ring -->
+		<item id="1982" chance="2060"/>	<!-- Purple Tome -->
+		<item id="8922" chance="2060"/>	<!-- Wand of Voodoo -->
+	</loot>
+</monster>

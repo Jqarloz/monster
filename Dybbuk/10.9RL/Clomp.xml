@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Clomp" nameDescription="a clomp" race="blood" experience="275" speed="400" manacost="0">
+	<health now="900" max="900"/>
+	<look type="860" corpse="25880"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-40" max="-250"/>
+	</attacks>
+	<defenses armor="15" defense="15"/>
+	<elements>
+		<element earthPercent="20"/>
+		<element holyPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Snort!"/>
+		<voice sentence="Snarl!"/>
+		<voice sentence="Grunt!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="25387" countmax="3" chance="35000"/><!-- raw meat -->
+		<item id="11224" chance="1710"/><!-- thick fur -->
+		<item id="5925" chance="1700"/><!-- hardene bone -->
+		<item id="3973" chance="630"/><!-- tusk shield -->
+		<item id="7432" chance="330"/><!-- furry club -->
+	</loot>
+</monster>

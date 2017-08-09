@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Assassin Antagonist" nameDescription="an Assassin antagonist" race="venom" experience="8000" speed="615" manacost="0">
+	<health now="10000" max="10000"/>
+	<look type="152" head="114" body="102" legs="102" feet="114" addons="3" mount="368" corpse="20327"/>
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="70" defense="20"/>	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="earth" interval="2000" chance="15" range="7" min="-200" max="-300">
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="15" range="7" min="-200" max="-300">
+			<attribute key="areaEffect" value="hearts"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="13" range="7" radius="3" target="1" min="-0" max="-300">
+			<attribute key="shootEffect" value="eartharrow"/>
+			<attribute key="areaEffect" value="carniphila"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="13" range="7" radius="3" target="1" min="-0" max="-500">
+			<attribute key="shootEffect" value="eartharrow"/>
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="invisible" interval="2000" chance="10" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="9" min="1500" max="2500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="17" min="600" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Defiler" interval="6000" chance="30" max="1"/>
+		<summon name="Medusa" interval="6000" chance="30" max="1"/>
+		<summon name="Hideous Fungus" interval="6000" chance="30" max="1"/>
+		<summon name="Earth Overlord" interval="6000" chance="30" max="1"/>
+		<summon name="Bog Raider" interval="6000" chance="30" max="1"/>
+		<summon name="Giant Spider" interval="6000" chance="30" max="1"/>
+		<summon name="Hydra" interval="6000" chance="30" max="1"/>
+		<summon name="Askarak Prince" interval="6000" chance="30" max="1"/>
+		<summon name="Crawler" interval="6000" chance="30" max="1"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Die!"/>
+		<voice sentence="Feel the hand of death!"/>
+		<voice sentence="You are on my deathlist!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="50" chance="83210"/>	<!-- gold coin -->
+		<item id="2152" countmax="30" chance="83210"/>	<!-- gold coin -->
+		<item id="2152" countmax="20" chance="83210"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="83210"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="83210"/>	<!-- gold coin -->
+		<item id="2050" countmax="1" chance="30000"/>	<!-- torch -->
+		<item id="7404" chance="1750"/>					<!-- assa. daggeer -->
+		<item id="7368" countmax="14" chance="7210"/>	<!-- ass star -->
+		<item id="7366" countmax="17" chance="4200"/>	<!-- viper star -->
+		<item id="2492" chance="2750"/>					<!-- dsm -->
+		<item id="2528" chance="3750"/>					<!-- tower shield -->
+		<item id="2181" chance="4000"/>					<!-- t rod -->
+		<item id="7884" chance="1190"/>					<!-- t arm -->
+		<item id="7885" chance="1910"/>					<!-- t legs -->
+		<item id="7886" chance="2560"/>					<!-- tboots -->
+		<item id="7903" chance="2940"/>					<!-- t helme -->
+		<item id="2182" chance="6480"/>					<!-- sna rod -->
+		<item id="8912" chance="2240"/>					<!-- sprin rod -->
+		<item id="18411" chance="520"/>					<!-- smock rod -->
+		<item id="2155" chance="3220"/>					<!-- green gem -->
+		<item id="2796" countmax="17" chance="54200"/>	<!-- green mushroom -->
+		<item id="2149" countmax="7" chance="4200"/>	<!-- small emerald -->
+	</loot>
+</monster>

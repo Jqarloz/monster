@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ogre Savage" nameDescription="a ogre savage" race="blood" experience="950" speed="405" manacost="525">
+	<health now="1400" max="1400"/>
+	<look type="858" corpse="25354"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-550"/>
+	</attacks>
+	<defenses armor="55" defense="55"/>
+	<elements>
+		<element energyPercent="10"/>
+		<element icePercent="20"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You tasty!"/>
+		<voice sentence="Must! Chop! Food! Raahh!"/>
+		<voice sentence="UGGA UGGA!!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="134" chance="82000"/><!-- gold coin -->
+		<item id="25389" chance="4930"/><!-- ogre ear stud -->
+		<item id="25390" chance="3930"/><!-- ogre nose ring -->
+		<item id="7588" chance="3630"/><!-- strong health potion -->
+		<item id="2687" countmax="6" chance="4460"/><!-- Cookie  -->
+		<item id="25392" chance="2530"/><!-- skull fetish -->
+		<item id="2194" chance="2200"/><!-- mysterious fetish -->
+		<item id="8844" countmax="2" chance="4200"/><!-- Jalapeño Pepper -->
+		<item id="25394" countmax="2" chance="2060"/><!-- onyx chip -->
+		<item id="2147" chance="2460"/><!-- Small rubies  -->
+		<item id="25395" chance="1960"/><!-- opal  -->
+		<item id="9970" countmax="5" chance="3733"/><!-- small topaz -->
+		<item id="25374" chance="1760"/><!-- ogre choppal -->
+		<item id="2391" chance="1760"/><!-- war hammer -->
+		<item id="25393" chance="760"/><!-- shamanic mask -->
+		<item id="7419" chance="630"/><!-- dreaded cleaver -->
+	</loot>
+</monster>

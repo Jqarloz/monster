@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dirty Rat" nameDescription="a dirty rat" race="blood" experience="10000" speed="545" manacost="0">
+	<health now="6000" max="6000"/>
+	<look type="305" corpse="9871"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-60" max="-150"/>
+		<attack name="earth" interval="2000" chance="18" range="7" min="-45" max="-285">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="3000" chance="20" length="8" spread="0" min="-30" max="-250">
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack> 
+		<attack name="speed" interval="3000" chance="10" range="7" target="1" duration="30000" speedchange="-200">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack> 
+		<attack name="lifedrain" interval="1000" chance="10" range="7" radius="3" target="0" min="-10" max="-150">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<elements>
+		<element firePercent="-10"/>
+		<element holyPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Grrrrrrrrrrrrrr!"/>
+		<voice sentence="Fcccccchhhhhh"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="35" chance="23000"/><!-- gold coin -->
+		<item id="5812" chance="6500"/><!-- skull candle -->
+		<item id="20101" chance="5500"/><!-- rat cheese -->
+		<item id="2799" chance="4500"/><!-- stone herb -->
+		<item id="2796" countmax="5" chance="6300"/><!-- green mushroom -->
+		<item id="2528" chance="1500"/><!-- tower shield -->
+		<item id="11305" chance="2000"/><!-- drakinata -->
+		<item id="2263" chance="100"/><!-- super sd -->
+		<item id="8918" chance="325"/><!-- spellbook -->
+		<item id="8473" countmax="25" chance="8000"/><!-- health potion -->
+		<item id="2520" chance="950"/><!-- demon shield -->
+	</loot>
+</monster>

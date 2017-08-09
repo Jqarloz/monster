@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cality Frager" nameDescription="a warlord" race="blood" experience="13000" speed="890" manacost="0">
+	<health now="30000" max="30000"/>
+	<look type="665" head="114" body="77" legs="77" feet="114" addons="3" mount="262" corpse="3058"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-150" max="-470"/>
+		<attack name="physical" interval="3000" chance="25" range="7" min="-100" max="-500">
+			<attribute key="shootEffect" value="throwingstar"/>
+		</attack>
+	</attacks>
+	<defenses armor="22" defense="35">
+		<defense name="invisible" interval="1000" chance="4" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="80"/>
+		<element energyPercent="40"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ranat Ulderek!"/>
+		<voice sentence="Orc buta bana!"/>
+		<voice sentence="Ikem rambo zambo!"/>
+		<voice sentence="Futchi maruk buta!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="7" chance="15000"/><!-- gold coin -->
+		<item id="2399" chance="4000" countmax="22"/><!-- throwing star -->
+		<item id="2667" countmax="10" chance="12500"/><!-- fish -->
+		<item id="2666" countmax="9" chance="9000"/><!-- meat -->
+		<item id="2432" chance="2650"/><!-- fire axe -->
+		<item id="2472" chance="500"/><!-- magic plate armor -->
+		<item id="2200" chance="7500"/><!-- protection amulet -->
+		<item id="2470" chance="600"/><!-- golden legs -->
+		<item id="7382" chance="1500"/><!-- demonrage sword -->
+		<item id="11302" chance="1750"/><!-- zaoan helmet -->
+		<item id="2165" chance="900"/><!-- stealth ring -->
+		<item id="8473" chance="1000"/><!-- health potion -->
+		<item id="7395" chance="100"/><!-- orc trophy -->
+		<item id="2179" chance="100"/><!-- golden ring -->
+		<item id="12643" chance="100"/><!-- magma boots -->
+	</loot>
+</monster>

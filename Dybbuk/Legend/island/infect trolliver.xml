@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Infect Trolliver" nameDescription="a Infect Trolliver" race="venom" experience="13000" speed="828" manacost="320">
+	<health now="6000" max="6000"/>
+	<look type="76" corpse="6018"/>
+	<targetchange interval="5000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-110" max="-300"/>
+		<attack name="earth" interval="4000" chance="15" range="7" min="-180" max="-320">
+			<attribute key="shootEffect" value="largerock"/>
+			<attribute key="areaEffect" value="bigplants"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+	<defense name="invisible" interval="2000" chance="20" duration="4000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Chicken" interval="1000" chance="5" max="3"/>
+		<summon name="infect trolliver" interval="3000" chance="5" max="1"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grrrr"/>
+		<voice sentence="Groar!"/>
+		<voice sentence="Me strong! Me ate spinach!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="35" chance="991500"/><!-- gold coin -->
+		<item id="2667" countmax="15" chance="63500"/><!-- fish -->
+		<item id="5890" countmax="2" chance="53500"/><!-- chicken feather -->
+		<item id="2410" countmax="8" chance="27500"/><!-- knife -->
+		<item id="8882" chance="10"/><!-- earthborn titan armor -->
+		<item id="7884" chance="3000"/><!-- terra mantle -->
+		<item id="7885" chance="1000"/><!-- terra legs -->
+		<item id="8909" chance="10"/><!-- terran rainbow shield -->
+		<item id="5908" chance="150"/><!-- obsidian knife -->
+		<item id="2195" chance="1050"/><!-- boots of haste -->
+		<item id="13508" chance="100"/><!-- Slug Drug -->
+		<item id="18411" chance="50"/><!-- muck rod -->
+	</loot>
+</monster>

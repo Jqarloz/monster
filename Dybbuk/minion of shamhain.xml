@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Minion of Shamhain" nameDescription="a minion of shamhain" race="undead" experience="15000" speed="250" manacost="350">
+	<health now="20000" max="20000"/>
+	<look type="298" corpse="5972"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-500" max="-1800"/>
+		<attack name="fire" interval="3000" chance="13" range="7" radius="7" target="1" min="-1300" max="-2800">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="100" defense="100"/>
+	<elements>
+		<element holyPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<loot>
+		<item id="9005" countmax="5" chance="8000"/>				<!-- yummy gummy worms -->
+		<item id="2148" countmax="30" chance="99500"/>	<!-- gold coin -->
+		<item id="2152" countmax="10" chance="14500"/>	<!-- gold coin -->
+		<item id="2160" countmax="10" chance="2500"/>	<!-- gold coin -->
+		<item id="6574" chance="2400"/>				<!-- white mushroom -->
+		<item id="2688" countmax="10" chance="3630"/>				<!-- pelvis bone -->
+		<item id="6569" countmax="10" chance="4000"/>					<!-- mace -->
+	</loot>
+</monster>

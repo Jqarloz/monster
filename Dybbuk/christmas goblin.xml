@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Christmas Goblin" nameDescription="a goblin" race="blood" experience="70000" speed="1000" manacost="290">
+	<health now="20000" max="20000"/>
+	<look type="61" corpse="6002"/>
+	<targetchange interval="5000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="8"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="10" attack="10"/>
+		<attack name="physical" interval="2000" chance="10" range="7" min="-0" max="-25">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="15" range="7" speedchange="-600" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="2000" chance="20" min="1000" max="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="2000" chance="20" duration="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-12"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Me have him!"/>
+		<voice sentence="Zig Zag! Gobo attack!"/>
+		<voice sentence="Help! Goblinkiller!"/>
+		<voice sentence="Bugga! Bugga!"/>
+		<voice sentence="Me green, me mean!"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="5" chance="50320"/><!-- gold coin -->
+		<item id="2688" countmax="5" chance="50320"/><!-- candy -->
+		<item id="6569" countmax="15" chance="50320"/><!-- candy -->
+		<item id="18403" chance="500"/><!-- p helm -->
+		<item id="18404" chance="500"/><!-- p armo -->
+		<item id="18405" chance="500"/><!-- p legs -->
+		<item id="18406" chance="500"/><!-- p boot -->
+		<item id="18410" chance="500"/><!-- p shiel -->
+		<item id="15406" chance="500"/><!-- o arm -->
+		<item id="15412" chance="500"/><!-- or leg -->
+		<item id="15413" chance="500"/><!-- or shiel -->
+		<item id="18398" chance="500"/><!-- gill he -->
+		<item id="18399" chance="500"/><!-- gill arm -->
+		<item id="18400" chance="500"/><!-- gill legs -->
+		<item id="2493" chance="500"/><!-- demon -->
+		<item id="2494" chance="500"/><!-- demon -->
+		<item id="2495" chance="500"/><!-- demon -->
+		<item id="9776" chance="500"/><!-- yalahar -->
+		<item id="9778" chance="500"/><!-- yalahar -->
+		<item id="9779" chance="500"/><!-- yalahar -->
+		<item id="15407" chance="500"/><!-- depth -->
+		<item id="15408" chance="500"/><!-- depth -->
+		<item id="15409" chance="500"/><!-- depth -->
+		<item id="15410" chance="500"/><!-- depth -->
+		<item id="9693" chance="500"/><!-- addon -->
+		<item id="13030" chance="500"/><!-- mount -->
+		<item id="11144" chance="500"/><!-- stamina -->
+	</loot>
+</monster>

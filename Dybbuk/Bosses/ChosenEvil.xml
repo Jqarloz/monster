@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chosen Evil" nameDescription="Chosen Evil" race="blood" experience="2000000" speed="800" manacost="0">
+	<health now="4200000" max="4200000"/>
+	<look type="842" head="114" body="43" legs="43" feet="114" corpse="25152"/>
+	<targetchange interval="2000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="3000" min="-800" max="-1200"/>
+		<attack name="energycondition" interval="1000" chance="10" radius="4" target="0" min="-800" max="-800">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="smallplants"/>
+		</attack>
+		<attack name="energy" interval="800" chance="20" radius="4" target="0" min="-500" max="-1600">
+			<attribute key="shootEffect" value="energy"/>
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="poison" interval="1000" chance="20" length="5" spread="2" min="-1000" max="-1800">
+			<attribute key="areaEffect" value="plantattack"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="20">
+		<defense name="healing" interval="1000" chance="1" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="5000" chance="30" min="1000" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="15"/>
+		<element firePercent="15"/>
+		<element energyPercent="15"/>
+		<element icePercent="15"/>
+		<element physicalPercent="10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="60" chance="60000"/><!-- gold coin -->
+		<item id="2148" countmax="120" chance="60000"/><!-- gold coin -->
+		<item id="2160" countmax="3" chance="100000"/><!-- platinum coin -->
+		<item id="2493" chance="500"/><!-- demon helmet -->
+		<item id="18403" chance="500"/><!-- prismatic helmet -->
+		<item id="15408" chance="500"/><!-- depth galea -->
+		<item id="2146" countmax="25" chance="100000"/><!-- small sapphire -->
+		<item id="7840" countmax="55" chance="52630"/><!-- flaming arrow -->
+		<item id="2431" chance="37030"/><!-- stonecutter axe -->
+		<item id="2143" countmax="25" chance="30571"/><!-- white pearl -->
+		<item id="8849" chance="49800"/><!-- modified crossbow -->
+		<item id="2498" chance="74280"/><!-- royal helmet -->
+		<item id="11302" chance="74280"/><!-- zaoan helmet -->
+		<item id="2520" chance="66490"/><!-- demon shield -->
+		<item id="2323" chance="74130"/><!-- hat of the mad -->
+		<item id="2514" chance="83890"/><!-- mastermind shield -->
+		<item id="11304" chance="56700"/><!-- zoan legs -->
+	</loot>
+</monster>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lost Ogre" nameDescription="a ogre" race="blood" experience="1800" speed="200" manacost="490">
+	<health now="20000" max="20000"/>
+	<look type="857" corpse="24799"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-1250"/>
+		<attack name="physical" interval="2000" chance="35" range="7" min="-200" max="-1180">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="50"/>
+	<elements>
+		<element energyPercent="25"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="You so juicy!"/>
+		<voice sentence="Smash you face in!!!."/>
+		<voice sentence="You stop! You lunch!"/>
+	</voices>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="104" chance="82000"/><!-- gold coin -->
+		<item id="2666" countmax="2" chance="4200"/><!-- meat -->
+		<item id="7588" chance="3630"/><!-- strong health potion -->
+		<item id="12403" chance="2630"/><!-- Battle Stone -->
+		<item id="1294" countmax="4" chance="2460"/><!-- Small stone  -->
+		<item id="2687" countmax="6" chance="4460"/><!-- Cookie  -->
+		<item id="2209" chance="2330"/><!-- club ring -->
+		<item id="2143" chance="2230"/><!-- white pearl -->
+		<item id="2147" chance="2460"/><!-- Small rubies  -->
+		<item id="25394" countmax="2" chance="2060"/><!-- onyx chip -->
+		<item id="25395" chance="1960"/><!-- opal  -->
+		<item id="2166" chance="1930"/><!-- power ring -->
+		<item id="25373" chance="1260"/><!-- ogre klubba -->
+		<item id="2562" chance="1260"/><!-- pot -->
+		<item id="9820" chance="760"/><!-- rusty helmet -->
+		<item id="25393" chance="760"/><!-- shamanic mask -->
+		<item id="10549" chance="460"/><!-- ancient stone -->
+	</loot>
+</monster>

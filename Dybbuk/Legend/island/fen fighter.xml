@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fen Fighter" nameDescription="a Fen Fighter" race="venom" experience="12500" speed="300" manacost="0">
+	<health now="6200" max="6200"/>
+	<look type="299" corpse="8951"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="15"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="1"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-59" max="-260"/>
+		<attack name="lifedrain" interval="2000" min="-90" max="-240" target="1">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="40" radius="2" target="0" min="-100" max="-375">
+			<attribute key="shootEffect" value="smallearth"/>
+		</attack>
+		<attack name="paralyze" interval="3000" chance="70" target="1">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="10" defense="15">
+		<defense name="speed" interval="10000" chance="40" speedchange="610" duration="20000">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</defense>
+		<defense name="healing" interval="5000" chance="60" min="50" max="800">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="-5"/>
+		<element firePercent="-85"/>
+		<element physicalPercent="20"/>
+		<element holyPercent="5"/>
+		<element energyPercent="10"/>
+		<element icePercent="5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Tchhh!"/>
+		<voice sentence="Slurp!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="30" chance="50000"/><!-- gold coin -->
+		<item id="10584" chance="9090"/><!-- boggy dreads -->
+		<item id="8472" countmax="5" chance="6173"/><!-- great spirit potion -->
+		<item id="7591" countmax="5" chance="5960"/><!-- great health potion -->
+		<item id="7730" chance="960"/><!-- Blue legs -->
+		<item id="8912" chance="1000"/><!-- springsprout rod -->
+		<item id="8473" countmax="5" chance="4704"/><!-- ultimate health potion -->
+		<item id="8872" chance="2537"/><!-- belted cape -->
+		<item id="8891" chance="1111"/><!-- paladin armor -->
+	</loot>
+</monster>

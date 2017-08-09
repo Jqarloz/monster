@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Assassin Predator" nameDescription="an Assassin Predator" race="blood" experience="11000" speed="615" manacost="0">
+	<health now="15000" max="15000"/>
+	<look type="152" head="114" body="58" legs="58" feet="114" addons="3" mount="427" corpse="20327"/>
+	<targetchange interval="4000" chance="0"/>
+	<strategy attack="70" defense="20"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="physical" interval="1000" chance="15" range="7" min="0" max="-900">
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="15" range="7" min="0" max="-900">
+			<attribute key="areaEffect" value="hearts"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="13" range="7" radius="3" target="1" min="0" max="-900">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="13" range="7" radius="3" target="1" min="0" max="-900">
+			<attribute key="shootEffect" value="whirlwindclub"/>
+			<attribute key="areaEffect" value="stones"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="invisible" interval="2000" chance="10" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="9" min="1500" max="2500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="1000" chance="17" min="600" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<elements>
+		<element physicalPercent="50"/>
+	</elements>
+	<summons maxSummons="2">
+		<summon name="Juggernaut" interval="6000" chance="30" max="1"/>
+		<summon name="Blightwalker" interval="6000" chance="30" max="1"/>
+		<summon name="Cliff Strider" interval="6000" chance="30" max="1"/>
+		<summon name="Guzzlemaw" interval="6000" chance="30" max="1"/>
+		<summon name="Choking Fear" interval="6000" chance="30" max="1"/>
+		<summon name="Enslaved Dwarf" interval="6000" chance="30" max="1"/>
+		<summon name="Destroyer" interval="6000" chance="30" max="1"/>
+		<summon name="Behemoth" interval="6000" chance="30" max="1"/>
+		<summon name="Minotaur Amazon" interval="6000" chance="30" max="1"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Die!"/>
+		<voice sentence="Feel the hand of death!"/>
+		<voice sentence="You are on my deathlist!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="50" chance="83210"/>	<!-- gold coin -->
+		<item id="2152" countmax="30" chance="83210"/>	<!-- gold coin -->
+		<item id="2152" countmax="20" chance="83210"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="83210"/>	<!-- gold coin -->
+		<item id="2148" countmax="100" chance="83210"/>	<!-- gold coin -->
+		<item id="2050" countmax="1" chance="30000"/>	<!-- torch -->
+		<item id="7404" chance="1750"/>					<!-- assa. daggeer -->
+		<item id="7368" countmax="14" chance="7210"/>	<!-- ass star -->
+		<item id="7366" countmax="17" chance="4200"/>	<!-- viper star -->
+		<item id="7383" chance="4000"/>					<!-- relic sword -->
+		<item id="2472" chance="1190"/>					<!-- magic arm -->
+		<item id="2470" chance="1910"/>					<!-- golden legs -->
+		<item id="2645" chance="2560"/>					<!-- Steel boots -->
+		<item id="11302" chance="2940"/>					<!-- zao helme -->
+		<item id="2452" chance="6480"/>					<!-- heavy mace -->
+		<item id="2393" chance="2240"/>					<!-- guiant sword -->
+		<item id="18451" chance="520"/>					<!-- crystaline axe -->
+		<item id="2154" chance="3220"/>					<!-- yellow gem -->
+		<item id="2790" countmax="17" chance="54200"/>	<!-- orange mushroom -->
+		<item id="2150" countmax="7" chance="4200"/>	<!-- small amethyst -->
+	</loot>
+</monster>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Danger Skeleton" nameDescription="a danger skeleton" race="undead" experience="2400" speed="170" manacost="3200">
+	<health now="4000" max="4000"/>
+	<look type="37" corpse="0"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-300" max="-950"/>
+		<attack name="death" interval="2000" chance="10" range="1" min="-30" max="-1000">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<elements>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+</monster>

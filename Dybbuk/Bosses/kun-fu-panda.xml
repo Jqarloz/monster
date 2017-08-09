@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Kun fu panda" nameDescription="a evil panda" race="blood" experience="5000000" speed="1500" manacost="0">
+<health now="700000" max="700000" />
+<look type="123" corpse="6049" />
+<targetchange interval="4000" chance="0" />
+<flags>
+	<flag rewardboss="1" />
+	<flag summonable="0" />
+	<flag attackable="1" />
+	<flag hostile="1" />
+	<flag illusionable="1" />
+	<flag convinceable="0" />
+	<flag pushable="0" />
+	<flag canpushitems="0" />
+	<flag canpushcreatures="0" />
+	<flag targetdistance="1" />
+	<flag staticattack="90" />
+	<flag runonhealth="15" />
+</flags>
+<attacks>
+	<attack name="melee" interval="2000" skill="190" attack="196" />
+	<attack name="physical" interval="2000" chance="5" range="7" radius="4" target="1" min="-1000" max="-4000">
+	<attribute key="areaEffect" value="redspark" />
+	</attack>
+	<attack name="physical" interval="2000" chance="20" range="7" min="-1000" max="-4000">
+	<attribute key="shootEffect" value="suddendeath" />
+	</attack>
+	<attack name="death" interval="2000" chance="10" range="7" min="-2500" max="-3000">	
+	<attribute key="shootEffect" value="suddendeath" />
+	<attribute key="areaEffect" value="smallclouds" />
+	</attack>
+	<attack name="earth" interval="2000" chance="5" range="7" radius="4" target="1" min="-1000" max="-3000">
+	<attribute key="shootEffect" value="poison" />
+	<attribute key="areaEffect" value="poison" />
+	</attack>
+	<attack name="earth" interval="2000" chance="15" target="1" range="7" min="0" max="-2000">
+	<attribute key="shootEffect" value="poison" />
+	<attribute key="areaEffect" value="poison" />
+	</attack>
+	<attack name="earth" interval="2000" chance="10" length="8" spread="3" min="-1500" max="-2900">
+	<attribute key="areaEffect" value="poison" />
+	</attack>
+	<attack name="lifedrain" interval="2000" chance="10" length="8" spread="3" min="-3000" max="-2000">
+	<attribute key="areaEffect" value="redshimmer" />
+	</attack>
+	<attack name="lifedrain" interval="2000" chance="5" radius="3" min="-1000" max="-9000">
+	<attribute key="areaEffect" value="redshimmer" />
+	</attack>
+	<attack name="undead dragon curse" interval="2000" chance="10" />
+	</attacks>
+<defenses armor="180" defense="265">
+		<defense name="invisible" interval="2000" chance="10" duration="2000">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="outfit" interval="4500" chance="30" monster="draken warmaster" duration="4000" />
+		<defense name="outfit" interval="4400" chance="30" monster="bear" duration="4000" />
+		<defense name="outfit" interval="4300" chance="30" monster="polar bear" duration="4000" />
+</defenses>
+<elements>
+	<element holyPercent="20" />
+	<element physicalPercent="-30" />
+	<element energyPercent="-10" />
+	<element deathPercent ="15" />
+</elements>
+<immunities>
+<immunity earth="1" />
+<immunity ice="1" />	
+</immunities>
+<voices interval="2000" chance="7">
+<voice sentence="MUERE MORTAL" />
+<voice sentence="Groar" />
+<voice sentence="ESTO ES ESPARTA" />
+<voice sentence="NI SIQUIERA LA MUETE PUEDE LIBERARTE DE MI" />
+<voice sentence="Groar" />
+<voice sentence="YO SOY EL GUERRERO DRAGOOOOOONNNN" />
+<voice sentence="NADIE OBTENDRA MI TESORO DE FIDEOS" />
+</voices>
+<loot>
+		<item id="11116" chance="1800" /><!-- serpent crest  -->
+		<item id="5944" countmax="4" chance="19250" /><!-- soul orb -->
+		<item id="2528" chance="15500" /><!-- tower shield -->	
+		<item id="7366" countmax="67" chance="8100" /><!-- viper star -->
+		<item id="7632" countmax="2" chance="28000" /><!-- giant shimmering pearl -->	
+		<item id="2154" chance="15500" /><!-- yellow gem -->		
+		<item id="2156" chance="10500" /><!-- red gem -->		
+		<item id="7440" chance="10500" /><!-- mastermind potion -->		
+		<item id="2153" chance="25500" /><!-- violet gem -->		
+		<item id="7590" chance="20500" /><!-- great mana potion -->		
+		<item id="8882" chance="5500" /><!-- earthborn titan armor -->	
+		<item id="2514" chance="5500" /><!-- mastermind shield -->	
+		<item id="2127" chance="10500" /><!-- emerald bangle -->	
+		<item id="8891" chance="5500" /><!-- paladin armor -->	
+		<item id="2515" chance="5500" /><!-- guardian shield -->		
+		<item id="2671" countmax="12" chance="70500" /><!-- ham -->
+		<item id="12401" countmax="5" chance="70500" /><!-- bamboo stick -->
+		<item id="3043" countmax="5" chance="70500" /><!-- dead badger -->
+		<item id="12543" countmax="10" chance="70500" /><!-- demonic cady balls -->
+		<item id="7368" countmax="100" chance="10000" /> <!-- Assassin Star -->
+		<item id="15407" countmax="1" chance="950" /><!-- depth lorica -->
+		<item id="25172" countmax="4" chance="5000"/><!-- silver token -->
+		<item id="22516" countmax="3" chance="2000" /><!-- ring of ending	-->
+		<item id="23816" countmax="1" chance="9000" /> <!-- war backpack-->
+		<item id="2148" countmax="25" chance="100000"/> <!--Gold-->				
+		<item id="18423" countmax="5" chance="100000"/> <!--Gold-->	
+		<item id="8860" chance="30000"/> <!-- spiderwab -->
+		<item id="6526" chance="30000"/><!-- skeleton decoration -->	
+		<item id="9006" chance="30000"/> <!-- toy spider -->	
+		<item id="6492" chance="30000"/> <!-- bat -->		
+		<item id="9005" countmax="50" chance="300000"/> <!-- yumme worms -->
+		<item id="6568" chance="30000"/> <!-- panda teddy -->		
+		<item id="6500" countmax="5" chance="30000"/> <!-- demonic esscences---->	
+		<item id="21399" countmax="1" chance="70500" /><!-- golden raid token -->
+		<item id="18423" countmax="4" chance="9000" /><!-- major tokens -->
+		<item id="18422" countmax="4" chance="9000" /><!-- minor tokens -->
+</loot>
+</monster>

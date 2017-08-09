@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Death King" nameDescription="a Death King" race="undead" experience="13000" speed="450" manacost="0">
+	<health now="6200" max="6200"/>
+	<look type="256" corpse="10321"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="2"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-10" max="-300"/>
+		<attack name="energy" interval="1000" chance="7" range="7" min="-15" max="-245">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="7" range="7" min="-25" max="-145">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="death" interval="1000" chance="8" range="7" min="-30" max="-250">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="poison" interval="1000" chance="8" range="7" min="-50" max="-245">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="lifedrain" interval="1000" chance="6" range="7" min="-35" max="-345">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="5" range="7" min="-55" max="-350">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="10"/>
+	<elements>
+		<element earthPercent="100"/>
+		<element icePercent="20"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="black knight" interval="3000" chance="20" max="3"/>
+		<summon name="necromancer" interval="3000" chance="20" max="3"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Eye for eye!"/>
+		<voice sentence="Here's looking at you!"/>
+		<voice sentence="Let me take a look at you!"/>
+		<voice sentence="You've got the look!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="60" chance="35000"/><!-- gold coin -->
+		<item id="2152" countmax="60" chance="35000"/><!-- gold coin -->
+		<item id="2407" chance="3250"/><!-- briagth sword -->
+		<item id="8920" chance="2000"/><!-- wand of starstorm -->
+		<item id="2175" chance="1650"/><!-- spellbook -->
+		<item id="2519" chance="1500"/><!-- crown shield -->
+		<item id="2393" chance="800"/><!-- giant sword -->
+		<item id="5898" chance="3775"/><!-- beholder eye -->
+		<item id="7620" countmax="60" chance="9750"/><!-- mana potion -->
+		<item id="2183" chance="1725"/><!-- hailstorm rod -->
+		<item id="2518" chance="750"/><!-- beholder shield -->
+	</loot>
+</monster>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Encripter" nameDescription="a encripter" race="blood" experience="100000" speed="210" manacost="0">
+	<health now="590000" max="590000"/>
+	<look type="275" corpse="8307"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="1000"/>
+	</flags>
+	<attacks>
+		<attack name="death" interval="2000" min="-400" max="-1090" poison="6"/>
+		<attack name="death" interval="2000" chance="15" range="7" min="-570" max="-1200">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="death" interval="2000" chance="15" target="0" radius="6" min="-300" max="-1500">
+			<attribute key="areaEffect" value="whitenote"/>
+		</attack>
+		<attack name="mutated bat curse" interval="2000" chance="10"/>
+		<attack name="poisoncondition" interval="2000" chance="15" target="0" length="4" spread="3" min="-120" max="-1200">
+			<attribute key="areaeffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="healing" interval="1000" chance="10" min="1000" max="2500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Shriiiiiek"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="10" chance="92000"/>	<!-- gold coin -->
+		<item id="2152" countmax="240" chance="92000"/>	<!-- gold coin -->
+		<item id="8889" chance="6200"/>					<!-- skull armor -->
+		<item id="8891" chance="6200"/>					<!-- pally armor -->
+		<item id="2536" chance="7760"/>					<!-- medusa s -->
+		<item id="8865" chance="2870"/>					<!-- dark armor -->
+		<item id="8890" chance="1070"/>					<!-- under.. armor -->
+		<item id="2488" chance="2870"/>					<!-- c leg -->
+		<item id="2195" chance="3870"/>					<!-- boh -->
+		<item id="2144" countmax="10" chance="2870"/>					<!-- perl -->
+		<item id="8849" chance="7260"/>					<!-- m crossbow -->
+		<item id="2158" chance="5060"/>					<!-- gem blue -->
+		<item id="5894" countmax="2" chance="4950"/>	<!-- bat wing -->
+		<item id="10579" chance="4900"/>				<!-- mutated bat ear -->
+		<item id="2167" chance="3000"/>					<!-- energy ring -->
+		<item id="2173" chance="3000"/>					<!-- aol -->
+		<item id="2144" countmax="13" chance="2710"/>		<!-- black pearl -->
+		<item id="2150" countmax="22" chance="2510"/>		<!-- small amethyst -->
+		<item id="7386" chance="5120"/>					<!-- mercenary sword -->
+		<item id="2400" chance="2120"/>					<!-- magic sword -->
+		<item id="10016" chance="3080"/>					<!-- batwing hat -->
+		<item id="2529" chance="2870"/>					<!-- black shield -->
+	</loot>
+</monster>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Scarlet Demon" nameDescription="a scarlet demon" race="fire" experience="15000" speed="280" manacost="0">
+	<health now="7500" max="7500"/>
+	<look type="35" corpse="5995"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="40"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-430"/>
+		<attack name="manadrain" interval="3000" chance="13" range="7" min="-300" max="-700"/>
+		<attack name="fire" interval="2000" chance="14" range="7" radius="7" target="1" min="-360" max="-800">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="energy" interval="3000" chance="30" length="8" spread="0" min="-120" max="-960">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="55">
+		<defense name="healing" interval="2000" chance="15" min="200" max="1000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="600" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="30"/>
+		<element deathPercent="30"/>
+		<element energyPercent="50"/>
+		<element earthPercent="40"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity drown="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+		<summon name="demon" interval="2000" chance="10" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Your soul will be mine!"/>
+		<voice sentence="MUHAHAHAHA!"/>
+		<voice sentence="CHAMEK ATH UTHUL ARAK!"/>
+		<voice sentence="I SMELL FEEEEAAAAAR!"/>
+		<voice sentence="Your resistance is futile!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="40" chance="100000"/><!-- gold coin -->
+		<item id="2795" countmax="15" chance="20000"/><!-- fire mushroom -->
+		<item id="8473" countmax="30" chance="20000"/><!-- ultimate health potion -->
+		<item id="7590" countmax="40" chance="14285"/><!-- great mana potion -->
+		<item id="2149" countmax="10" chance="10000"/><!-- small emerald -->
+		<item id="7368" countmax="50" chance="5263"/><!-- assassin star -->
+		<item id="2393" chance="1000"/><!-- giant sword -->
+		<item id="2165" chance="6333"/><!-- stealth ring -->
+		<item id="2179" chance="7010"/><!-- gold ring -->
+		<item id="2171" chance="3813"/><!-- platinum amulet -->
+		<item id="7434" chance="1666"/><!-- royal axe -->
+		<item id="2520" chance="1649"/><!-- demon shield -->
+		<item id="2214" chance="9473"/><!-- ring of healing -->
+		<item id="2470" chance="1413"/><!-- golden legs -->
+		<item id="2514" chance="889"/><!-- mastermind shield -->
+		<item id="2472" chance="591"/><!-- magic plate armor -->
+	</loot>
+</monster>

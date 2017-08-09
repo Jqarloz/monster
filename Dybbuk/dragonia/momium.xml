@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Momium" nameDescription="a mommium" race="undead" experience="14750" speed="320" manacost="0">
+	<health now="20500" max="20500"/>
+	<look type="90" corpse="6025"/>
+	<targetchange interval="5000" chance="8"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-991"/>
+		<attack name="poison" interval="2000" chance="25" range="7" min="-350" max="-750">
+			<attribute key="shootEffect" value="poison"/>
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poison" interval="3000" chance="17" length="8" spread="3" target="0" min="-500" max="-892">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="poisoncondition" interval="1000" chance="15" radius="5" target="0" min="-34" max="-34">
+			<attribute key="areaEffect" value="poison"/>
+		</attack>
+		<attack name="speed" interval="1000" chance="6" range="7" speedchange="-400" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="30">
+		<defense name="healing" interval="2000" chance="20" min="1150" max="2450">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="-20"/>
+		<element firePercent="-10"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="4">
+		<summon name="Slime" interval="2000" chance="30"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="You will become a feast for my maggots."/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="23" chance="91000"/>	<!-- gold coin -->
+		<item id="2402" chance="20000"/>				<!-- silver dagger -->
+		<item id="2149" countmax="6" chance="9000"/>	<!-- small emerald -->
+		<item id="7591" countmax="10" chance="8000"/>	<!-- great health potion -->
+		<item id="2169" chance="4320"/>					<!-- time ring -->
+		<item id="2393" chance="3600"/>					<!-- giant sword -->
+		<item id="2451" chance="1200"/>					<!-- djinn blade -->
+		<item id="2155" chance="2400"/>					<!-- green gem -->
+		<item id="11207" chance="50"/>					<!-- mini mummy -->
+	</loot>
+</monster>

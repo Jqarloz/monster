@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bat Destroyer" nameDescription="a bat destroyer" race="undead" experience="13000" speed="445" manacost="0">
+	<health now="6400" max="6400"/>
+	<look type="307" corpse="9829"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-250"/>
+		<attack name="earth" interval="2000" chance="18" range="7" min="-190" max="-380">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="drown" interval="1000" chance="8" target="0" radius="6" min="-200" max="-300">
+			<attribute key="areaEffect" value="whitenote"/>
+		</attack>
+		<attack name="drunk" interval="1000" chance="8" target="0" radius="6" duration="15000">
+			<attribute key="areaeffect" value="yellownote"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30"/>
+	<immunities>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+	</voices>
+	<loot>
+		<item id="2152" countmax="60" chance="43500"/><!-- gold coin -->
+		<item id="5894" countmax="4" chance="4000"/><!-- bat wing -->
+		<item id="2514" chance="900"/><!-- mastermind shield -->
+		<item id="2144" countmax="13" chance="5000"/><!-- black pearl -->
+		<item id="2167" chance="9900"/><!-- energy ring -->
+		<item id="7382" chance="1000"/><!-- demonrage sword -->
+		<item id="2800" chance="7400"/><!-- obsidian lance -->
+		<item id="2466" chance="1400"/><!-- golden armor -->
+		<item id="2150" countmax="12" chance="6500"/><!-- small amethyst -->
+		<item id="7386" chance="3900"/><!-- mercenary sword -->
+		<item id="10016" chance="1000"/><!-- batwing hat -->
+	</loot>
+</monster>

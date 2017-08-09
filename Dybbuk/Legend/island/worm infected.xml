@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Worm Infected" nameDescription="a Worm Infected" race="venom" experience="8000" speed="200" manacost="380">
+	<health now="4000" max="4000"/>
+	<look type="192" corpse="6069"/>
+	<targetchange interval="2000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-200"/>
+		<attack name="physical" interval="3000" chance="15" range="7" min="-280" max="-220">
+			<attribute key="shootEffect" value="smallearth"/>
+			<attribute key="areaEffect" value="plantattack"/>
+		</attack>
+		<attack name="poisonfield" interval="5000" chance="17" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="8" defense="11"/>
+	<elements>
+		<element earthPercent="100"/>
+		<element energyPercent="5"/>
+		<element firePercent="-5"/>
+		<element icePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="30" chance="50000"/><!-- gold coin -->
+		<item id="2666" countmax="2" chance="11111"/><!-- meat -->
+		<item id="3976" countmax="3" chance="1754"/><!-- worm -->
+		<item id="2182" chance="1000"/><!-- terra rod -->
+		<item id="7886" chance="1000"/><!-- terra boots -->
+		<item id="7885" chance="900"/><!-- terra legs -->
+		<item id="7903" chance="500"/><!-- terra hood -->
+		<item id="7884" chance="1500"/><!-- terra mantle -->
+		<item id="2673" countmax="7" chance="5754"/><!-- pear -->
+	</loot>
+</monster>

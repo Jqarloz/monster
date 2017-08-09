@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Wereboar" nameDescription="a wereboar" race="blood" experience="2000" speed="260">
+	<health now="2200" max="2200"/>
+	<look type="721" corpse="24894"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-650"/>
+	</attacks>
+	<defenses armor="75" defense="65"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grunt"/>
+	</voices>
+	<elements>
+		<element earthPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="250000"/>	<!-- gold -->
+		<item id="2148" countmax="50" chance="10500"/>	<!-- gold -->
+		<item id="2152" countmax="5" chance="9500"/>	<!-- platium coins -->
+		<item id="7588" chance="8000"/>	<!-- strong health potion -->
+		<item id="2789" chance="7800"/>	<!-- brown mushroom -->
+		<item id="8473" chance="1000"/>	<!-- ultimate health potion -->
+		<item id="24881" chance="2000"/>	<!-- wereboar hoves -->
+		<item id="24882" chance="1990"/>	<!-- wereboar tusks -->
+		<item id="24915" chance="1090"/>	<!-- wereboar loincloth -->
+		<item id="7439" chance="590"/>	<!-- berserk potion -->
+		<item id="24888" chance="290"/>	<!-- wereboar amulet -->
+		<item id="2197" chance="490"/>	<!-- stone skin amulet -->
+		<item id="24913" chance="200"/>	<!-- fur armor -->
+		<item id="24930" chance="100"/>	<!-- wereboar trophy -->
+	</loot>
+</monster>

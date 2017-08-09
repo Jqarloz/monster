@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Old Spider" nameDescription="a old spider" race="venom" experience="1300" speed="230" manacost="0">
+	<health now="13000" max="13000"/>
+	<look type="38" corpse="5977"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-0" max="-900" poison="160"/>
+		<attack name="poisonfield" interval="2000" chance="10" range="7" radius="1" target="1">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="earth" interval="2000" chance="10" range="7" radius="1" target="1" min="-440" max="-1070">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+	</attacks>
+	<defenses armor="125" defense="125">
+		<defense name="speed" interval="2000" chance="15" speedchange="390" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="20"/>
+		<element icePercent="20"/>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="Power Spider" interval="2000" chance="10" max="2"/>
+	</summons>
+	<loot>
+		<item id="2148" countmax="100" chance="50000"/><!-- gold coin -->
+		<item id="2152" countmax="95" chance="50000"/><!-- gold coin -->
+		<item id="2545" countmax="12" chance="12500"/><!-- poison arrow -->
+		<item id="15490" chance="1333"/><!-- gasshoper legs -->
+		<item id="2486" chance="8333"/><!-- noble armor -->
+		<item id="2377" chance="9000"/><!-- two handed sword -->
+		<item id="2457" chance="4545"/><!-- steel helmet -->
+		<item id="7588" countmax="12" chance="3571"/><!-- strong health potion -->
+		<item id="5879" chance="2140"/><!-- spider silk -->
+		<item id="2477" chance="4870"/><!-- knight legs -->
+		<item id="2169" chance="8710"/><!-- time ring -->
+		<item id="2171" chance="2280"/><!-- platinum amulet -->
+		<item id="2476" chance="4530"/><!-- knight armor -->
+		<item id="7901" chance="6220"/><!-- lightning headband -->
+	</loot>
+</monster>

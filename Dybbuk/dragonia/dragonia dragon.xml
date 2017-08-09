@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dragonia Dragon" nameDescription="a dragon" race="blood" experience="3500" speed="235" manacost="0">
+	<health now="5000" max="5000"/>
+	<look type="34" corpse="5973"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="80"/>
+		<flag runonhealth="600"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-160" max="-640"/>
+		<attack name="fire" interval="2000" chance="15" range="7" radius="4" target="1" min="-360" max="-640">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="10" length="8" spread="3" min="-1000" max="-1700">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="30" defense="30">
+		<defense name="healing" interval="2000" chance="15" min="340" max="870">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element energyPercent="20"/>
+		<element icePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROOAAARRR" yell="1"/>
+		<voice sentence="FCHHHHH" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="70" chance="47500"/><!-- gold coin -->
+		<item id="2152" countmax="45" chance="37500"/><!-- gold coin -->
+		<item id="12413" chance="9740"/><!-- dragon's tail -->
+		<item id="2672" countmax="6" chance="65500"/><!-- dragon ham -->
+		<item id="2513" chance="15000"/><!-- battle shield -->
+		<item id="8855" chance="10000"/><!-- composite hornbow -->
+		<item id="7385" chance="4000"/><!-- crimson sword -->
+		<item id="2491" chance="3000"/><!-- crown helmet -->
+		<item id="2477" chance="2000"/><!-- knight legs -->
+		<item id="7383" chance="1950"/><!-- relic sword -->
+		<item id="7588" countmax="16" chance="1000"/><!-- strong health potion -->
+		<item id="2378" chance="960"/><!-- battle axe -->
+		<item id="18409" chance="705"/><!-- wand of everblazing -->
+		<item id="5920" chance="1000"/><!-- green dragon scale -->
+		<item id="2434" chance="560"/><!-- dragon hammer -->
+		<item id="5877" chance="1005"/><!-- green dragon leather -->
+		<item id="2145" countmax="6" chance="380"/><!-- small diamond -->
+		<item id="2516" chance="820"/><!-- dragon shield -->
+		<item id="7382" chance="120"/><!-- demonrage sword -->
+		<item id="7430" chance="1010"/><!-- dragonbone staff -->
+		<item id="2177" chance="1200"/><!-- life crystal -->
+		<item id="2546" countmax="10" chance="8060"/><!-- burst arrow -->
+	</loot>
+</monster>

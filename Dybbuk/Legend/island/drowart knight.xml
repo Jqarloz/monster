@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drowart Knight" nameDescription="a drowart knight" race="blood" experience="16000" speed="320" manacost="0">
+	<health now="8000" max="8000"/>
+	<look type="539" corpse="19998"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-50" max="-400"/>
+		<attack name="physical" interval="4000" chance="20" min="-150" max="-490">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="75" defense="75">
+	</defenses>
+	<elements>
+		<element deathPercent="10"/>
+		<element icePercent="10"/>
+		<element energyPercent="10"/>
+		<element firePercent="10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Yagga! Yagga!"/>
+		<voice sentence="grunt"/>
+		<voice sentence="Hurrr!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="22" chance="30000"/> <!-- Platinum Coin -->
+		<item id="2789" countmax="5" chance="30000"/> <!-- Brown Mushroom -->
+		<item id="20137" chance="1880"/> <!-- Basalt Fetish -->
+		<item id="7591" countmax="15" chance="45000"/> <!-- GHP -->
+		<item id="7590" countmax="15" chance="41000"/> <!-- GMP -->
+		<item id="7386" chance="1210"/> <!-- mercenary sword -->
+		<item id="5892" chance="710"/> <!-- huge chunk of crude iron -->
+		<item id="1869" chance="6210"/> <!-- red tapestry -->
+		<item id="6528" chance="210"/> <!-- avenger -->
+		<item id="2503" chance="10"/> <!-- dwarven armor -->
+		<item id="2525" chance="7210"/> <!-- dwarven shield -->
+		<item id="2466" chance="1210"/> <!-- golden armor -->
+		<item id="2151" countmax="5" chance="5210"/> <!-- talon -->
+	</loot>
+</monster>

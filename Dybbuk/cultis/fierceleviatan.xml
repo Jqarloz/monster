@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Fierce Leviathan" nameDescription="Fierce Leviathan" race="blood" experience="13000" speed="240" manacost="0">
+	<health now="22000" max="22000"/>
+	<look type="394" corpse="13603"/>
+	<targetchange interval="5000" chance="30"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-900"/>
+		<attack name="fire" interval="1000" chance="12" range="7" target="1" min="0" max="-600">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="manadrain" interval="1400" chance="24" range="6" min="0" max="-1000">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+		<attack name="firefield" interval="1600" chance="20" range="7" radius="3" target="1">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="15" radius="4" target="0" min="-1000" max="-1000">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+	</attacks>
+	<defenses armor="200" defense="200">
+		<defense name="healing" interval="2000" chance="25" min="1250" max="3380">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity energy="1"/>
+		<immunity drunk="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="1">
+		<summon name="Danger Skeleton" interval="1000" chance="10"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Welcome to Danger Cultis"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="340" chance="100000"/>	<!-- gold coin -->
+		<item id="2152" countmax="53" chance="48000"/>		<!-- platinum coin -->
+		<item id="7589" countmax="15" chance="21000"/>		<!-- strong mana potion -->
+		<item id="7588" countmax="15" chance="17000"/>		<!-- strong health potion -->
+		<item id="2178" chance="5000"/>						<!-- mind stone -->
+		<item id="2165" chance="5000"/>						<!-- stealth ring -->
+		<item id="7368" countmax="34" chance="4000"/>		<!-- assassin star -->
+		<item id="2792" countmax="23" chance="4000"/>		<!-- dark mushroom -->
+		<item id="5911" chance="3000"/>						<!-- red piece of cloth -->
+		<item id="2150" countmax="13" chance="4000"/>		<!-- small amethyst -->
+		<item id="13756" chance="480"/>						<!-- mage's cap -->
+		<item id="7443" countmax="3" chance="1100"/>		<!-- bullseye potion -->
+		<item id="9941" chance="740"/>						<!-- crystal of focus -->
+		<item id="2195" chance="1370"/>						<!-- boots of haste -->
+		<item id="12410" chance="370"/>						<!-- luminous orb -->
+		<item id="2114" chance="9370"/>						<!-- piggy bank -->
+		<item id="2123" chance="2370"/>						<!-- ring of the sky -->
+		<item id="8901" chance="2370"/>						<!-- spellbook of warding -->
+	</loot>
+</monster>

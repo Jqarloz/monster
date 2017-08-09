@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Drowart Mage" nameDescription="a drowart mage" race="blood" experience="16500" speed="320" manacost="0">
+	<health now="8000" max="8000"/>
+	<look type="538" corpse="19998"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="90" defense="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="ice" interval="2000" min="-50" max="-310"/>
+		<attack name="energy" interval="2000" chance="25" length="8" spread="0" min="-165" max="-445">
+			<attribute key="areaEffect" value="energy"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="20" min="-150" max="-390">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="55">
+		<defense name="healing" interval="2000" chance="25" min="100" max="920">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="10"/>
+		<element icePercent="10"/>
+		<element energyPercent="100"/>
+		<element firePercent="10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Yagga! Yagga!"/>
+		<voice sentence="grunt"/>
+		<voice sentence="Hurrr!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="22" chance="30000"/> <!-- Platinum Coin -->
+		<item id="2789" countmax="5" chance="30000"/> <!-- Brown Mushroom -->
+		<item id="20136" chance="3880"/> <!-- Basalt Fetish -->
+		<item id="7591" countmax="25" chance="45000"/> <!-- GHP -->
+		<item id="7590" countmax="25" chance="41000"/> <!-- GMP -->
+		<item id="8911" chance="1210"/> <!-- northwind rod -->
+		<item id="5891" chance="1210"/> <!-- enchanted chicken wing -->
+		<item id="1872" chance="6210"/> <!-- blue tapestry -->
+		<item id="18390" chance="210"/> <!-- wand of defiance -->
+		<item id="6132" chance="10"/> <!-- soft boots -->
+		<item id="2525" chance="4210"/> <!-- dwarven shield -->
+		<item id="2534" chance="2210"/> <!-- vampire shield -->
+		<item id="2269" countmax="5" chance="4210"/> <!-- mw -->
+	</loot>
+</monster>

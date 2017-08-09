@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werebear" nameDescription="a werebear" race="blood" experience="2100" speed="360">
+	<health now="2400" max="2400"/>
+	<look type="720" corpse="24840"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-100" max="-400"/>
+		<attack name="lifedrain" interval="2000" chance="10" length="8" spread="0" min="-300" max="-590">
+			<attribute key="areaEffect" value="purpleenergy"/>
+		</attack>
+	</attacks>
+	<defenses armor="75" defense="65"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Grunt"/>
+	</voices>
+	<elements>
+		<element earthPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2148" countmax="100" chance="250000"/>	<!-- gold -->
+		<item id="2148" countmax="50" chance="10500"/>	<!-- gold -->
+		<item id="2152" countmax="5" chance="9500"/>	<!-- platium coins -->
+		<item id="2671" countmax="4" chance="7500"/>	<!-- ham -->
+		<item id="24884" chance="1500"/>	<!-- werebear skull -->
+		<item id="24885" chance="1518"/>	<!-- werebear fur -->
+		<item id="7591" chance="4430"/>	<!-- great health potion -->
+		<item id="5896" chance="2790"/>	<!-- bear paw -->
+		<item id="5902" chance="2500"/>	<!-- Honeycomb -->
+		<item id="24888" chance="1080"/>	<!-- werewolf amulet -->
+		<item id="7439" chance="820"/>	<!-- berserk potion -->
+		<item id="7452" chance="610"/>	<!-- spiked squelcher -->
+		<item id="7383" chance="550"/>	<!-- relic sword -->
+		<item id="24930" chance="210"/>	<!-- wereboar trophy -->
+		<item id="7419" chance="130"/>	<!-- dreader claver -->
+	</loot>
+</monster>

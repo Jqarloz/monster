@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lutin" nameDescription="a lutin" race="blood" experience="12000" speed="300" manacost="2900">
+	<health now="6000" max="6000"/>
+	<look type="61" corpse="6002"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-100" max="-410"/>
+		<attack name="physical" interval="2000" chance="9" range="7" min="-150" max="-575">
+			<attribute key="shootEffect" value="smallstone"/>
+		</attack>
+	</attacks>
+	<elements>
+		<element energyPercent="20"/>
+		<element holyPercent="20"/>
+		<element earthPercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="Me have him!"/>
+		<voice sentence="Zig Zag! Gobo attack!"/>
+		<voice sentence="Help! Lutinkiller!"/>
+		<voice sentence="Bugga! Bugga!"/>
+		<voice sentence="Me green, me mean!"/>
+	</voices>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="19" chance="28750"/><!-- gold coin -->
+		<item id="2152" countmax="19" chance="28750"/><!-- gold coin -->
+		<item id="2152" countmax="19" chance="28750"/><!-- gold coin -->
+		<item id="5902" chance="9000"/><!-- honey combs -->
+		<item id="8885" chance="100"/><!-- divine plate -->
+		<item id="2392" chance="4000"/><!-- fire sword -->
+		<item id="2667" countmax="19" chance="13750"/><!-- fish -->
+		<item id="2503" chance="10"/><!-- dwarven armor -->
+		<item id="5741" chance="2570"/><!-- skull helmet -->
+		<item id="8209" chance="10000"/><!-- sword -->
+		<item id="2387" chance="7750"/><!-- small axe -->
+		<item id="1294" countmax="20" chance="7000"/><!-- small stone -->
+	</loot>
+</monster>
